@@ -7,33 +7,62 @@
     <script src="script.js"></script></script>
 </head>
 <body>
-    <nav id="nav">
-        <h1 id="homepage">My Playground</h1>
-        <ul id="pagelinks">
-            <li>About Me</li>
-            <li>Projects</li>
-            <li>Contact</li>
+    <nav>
+        <h1 class="homepage">My Playground</h1>
+        <ul class="pagelinks">
+            <li class="pageLink">About Me</li>
+            <li class="pageLink">Projects</li>
+            <li class="pageLink">Contact</li>
         </ul>
     </nav>
-
+<main>
     <section id="aboutMe">
-
-
+        <div class="aboutMeText">
+            <h2>About Me</h2>
+            <p></p>
+        </div>
+        <div class="profilePic">
+            <img src="assets/profile pic.jpg" alt="Profile pic of Dan Sodera"> 
+        </div>
     </section>
 
     <section id="projects">
+        <h2>Projects</h2>
+        <img src="assets/project1.jpg" alt="project1" class="projectPics">
+        <p class="projectDescription"></p>
 
-
+        <img src="assets/project2.jpg" alt="project2" class="projectPics">
+        <p class="projectDescription"></p>
     </section>
 
     <section id="contact">
+        <h2>Contact Me!</h2>
+        <form action="submission.html" method="POST">
+          <label for="name">Name</label>
+          <br>
+          <input type="text" id="name" name="name">
+          <br>
+          <label for="email">E-mail</label>
+          <br>
+          <input type="email" id="email" name="email">
+          <br>
+          <label for="message">Message</label>
+          <br>
+          <textarea id="message" name="message" rows="3" cols="40"></textarea>
+          <br>
+          <section class="submission">
+            <input type="submit" value="Send">
+          </section>
+           
+        </form>
         
 
     </section>
 
-    
-</body>
+</main>
 <footer>
     <p>Made from scratch</p>
 </footer>
+</body>
+
 </html>
